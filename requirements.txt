@@ -1,4 +1,7 @@
 torch
 torchvision
+diffusers
+transformers
+accelerate
 
 runpod
