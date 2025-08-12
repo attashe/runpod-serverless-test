@@ -5,6 +5,7 @@ WORKDIR /
 RUN pip install huggingface_hub
 
 # Или через CLI
+COPY download_models.py .
 RUN python model_download.py
 
 # Copy requirements and install
