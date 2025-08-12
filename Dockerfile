@@ -5,9 +5,7 @@ WORKDIR /
 RUN pip install huggingface_hub
 
 # Или через CLI
-RUN huggingface-cli download alexgenovese/checkpoint \
-    SD1.5/realisticVisionV60B1_v60B1VAE.safetensors \
-    --cache-dir /models
+RUN python model_download.py
 
 # Copy requirements and install
 COPY requirements.txt .
